@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*for mobile:375px*/
+
+body{
+    background: url(images/bg-mobile.png);
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-one{
+    width: 90%;
+    background-color:  hsl(228, 56%, 26%);
+    border-radius: 10px 100px 10px 10px;
+}
+
+
+.logo{
+    margin: 9%;
+
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    margin-left: 9%;
+    margin-bottom: 9%;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.document, .folder, .upload{
+    background-color:  hsl(229, 57%, 11%);
+    padding: 7%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.box-two{
+    color: white;
+    width: 90%;
+    margin-top: 5%;
+    background-color: hsl(228, 56%, 26%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.text{
+    margin-top: 10%;
+}
+
+.text span{
+    font-weight: bolder;
+}
+
+.bar{
+    background-color:  hsl(229, 57%, 11%);
+    width: 90%;
+    margin-top: 5%;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+
+.bar .insidebar{
+    border-radius: 20px;
+    width: 81.5%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%),hsl(335, 100%, 65%)) ;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.bar .insidebar .whiteball{
+
+    height: 10px;
+    background-color: white;
+    width: 4%;
+    border-radius: 10px;
+
+}
+
+.limit{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 15%;
+}
+
+/*Desktop:1440px*/
+
+@media only Screen and (min-width: 750px){
+    body{
+        background-image: url(images/bg-desktop.png);
+        background-position-y: bottom;
+        background-color: hsl(229, 57%, 11%);
+        background-repeat: repeat-x;
+    }
+
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .box-one{
+        width: 25%;
+        margin-right: 2%;
+    }
+
+    .box-two{
+        width: 45%;
+        margin-left: 2%;
+        margin-bottom: 1%;
+
+    }
+
+    .text{
+        margin-top: 5%;
+        align-self: flex-start;
+        margin-left: 5%;
+    }
+
+    .bar .insidebar .whiteball{
+        width: 2%;
+    }
+
+    .limit{
+        margin-top: 1%;
+        margin-bottom: 3%;
+    }
+}
+
